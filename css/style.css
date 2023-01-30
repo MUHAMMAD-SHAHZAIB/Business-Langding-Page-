@@ -1,0 +1,455 @@
+/* universal csss start*/
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.extradiv h2,
+.servicediv h2 {
+  font-size: 0.9rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #606060;
+}
+i {
+  color: #3ccdbb;
+}
+/* universal csss end*/
+
+/* header css start*/
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 168, 255, 0.3),
+      rgba(0, 168, 255, 0.3)
+    ),
+    url("/images/fornt.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  opacity: 0.4;
+  z-index: -1;
+}
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  opacity: 0.4;
+  z-index: -1;
+}
+.nav-item a {
+  color: white !important;
+  font-weight: bold;
+}
+
+.header-section {
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.center-div {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-buttons a {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-buttons a:hover {
+  text-decoration: none;
+  color: #50d1c0;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.center-div p {
+  font-size: 1.3rem;
+  padding: 10px 0 20px 0;
+  color: white;
+}
+/*---------extra div section css------*/
+.header-extra-div {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.extradiv {
+  background-color: white;
+  border: medium none;
+  padding: 50px !important;
+  border-radius: 3px;
+  transition: 0.3s;
+  /* box-shadow: #a74e4e; */
+}
+.extradiv:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+}
+
+/* serverice offer css start */
+.serviceoffer {
+  background-color: #f7f7f9;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+.headings {
+  margin-bottom: 50px;
+}
+
+.headings h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.names h1 {
+  color: #2e2e2e;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.service-icons {
+  /* margin: 30px 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  height: 0.6rem !important;
+}
+
+/* projects done style */
+.project-work {
+  margin: 100px 0;
+}
+.project-work h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* pricing  style */
+.pricing {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  position: relative;
+}
+
+.pricing::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+  /* opacity: 0.4; */
+  z-index: -1;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+.card .card-header {
+  padding: 30px;
+  background-color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card .card-footer {
+  padding: 30px;
+  background-color: white;
+}
+
+.card .card-footer a {
+  /* background-color: #3ccdbb; */
+  text-decoration: none;
+  padding: 12px 35px;
+  outline: none;
+  border-radius: 100px;
+  margin: 0 50px;
+  border: 1px solid #3ccdbb;
+  color: #3ccdbb;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+.card:hover .card-footer a {
+  color: #fff;
+  background: #3ccdbb;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card .card-body {
+  /* margin: 0px 30px 0 30px; */
+  padding: 50px 0;
+  /* line-height: 20px; */
+}
+.card .card-body li {
+  color: #c5c5c5;
+  text-transform: capitalize;
+  font-size: 1rem;
+  line-height: 40px;
+}
+.card .card-body span {
+  color: rgb(153, 153, 153);
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.card:hover span,.card:hover .card-header{
+  color: #3ccdbb;
+}
+.card-default{
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); */
+  transform: translateY(-20px);
+}
+
+
+/* ===========happpay cline style-======  */
+.happyclinets{
+  width: 100%;
+  height: 100vh;
+  /* padding:80px 0; */
+
+}
+
+.box{
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow:0 5pc 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+  height:40vh;
+}
+.box:hover{
+  background-color: #16c9f6;
+}
+
+.box:hover p{
+  color: #fff;
+}
+.carousel-indicators{
+  position:absolute;
+  right: 0;
+  bottom: -60px !important;
+
+}
+
+.carousel-indicators button{
+  background-color: #16c9f6 !important;
+}
+
+.box a{
+  position: relative;
+
+}
+.box a img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.box a:after{
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 40px;
+  height: 40px;
+  background:linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  color: white;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box h1{
+  font-size: 18px;
+  font-weight: 400;
+  color:#000;
+  margin-top: 10px;
+}
+.box h2{
+  font-size: 13px;
+  font-weight: 700;
+  color:#666;
+  margin-top: 20px;
+}
+
+/******* happy contact-us style ******/
+.contact-us{
+  width: 100%;
+  height: 100vh;
+  padding:80px 0;
+  position: relative;
+
+}
+
+.contact-us ::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background:linear-gradient(340deg, #16c9f6 55%, #fff 0%);
+
+}
+
+.form-btn button{
+  text-decoration: none;
+  padding: 12px 35px;
+  outline: none;
+  border-radius: 100px;
+  margin: 0 50px;
+  border: 1px solid #3ccdbb;
+  color: #3ccdbb;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  background: transparent;
+  
+}
+
+form:hover .form-btn button{
+  background-color: #fff;
+  color: #3ccdbb;
+outline: none;
+border: none;
+box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+::placeholder{
+  /* color:red; */
+  font-size: 0.8rem;
+}
+
+/**********news-letter *********/
+.news-letter{
+  width: 100%;
+  height: auto;
+  margin: 80px 0;
+}
+.news-input{
+  border-radius: 100px 0px 0px 100px !important;
+  min-width:150px;
+  min-height: 45px;
+}
+.input-group-text{
+
+  color: #fff !important;
+  background: #3ccdbb !important;
+  border-radius:0px 100px 100px 0px !important;
+  min-width:120px;
+  min-height: 45px;
+}
+/* <!----------footer section style--------------> */
+.footersection{
+  width: 100%;
+  height: auto;
+  padding: 70px 0 20px 0;
+  position: relative;
+  background-color: #00abff;
+}
+
+.footersection p{
+  color:#fff;
+}
+.footersection li a{
+  font-size:0.9rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.footersection h3{
+  text-transform:uppercase ;
+  color: #fff;
+  margin-bottom: 1.2rem !important;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#myBtn{
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border:none;
+  background: #00abff;
+  color:#fff ;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+#myBtn:hover{
+  background-color:#606060;
+}
